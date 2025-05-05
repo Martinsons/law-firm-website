@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import SafeImage from '@/components/ui/SafeImage';
 import { motion } from 'framer-motion';
 
 interface CaseCalculatorProps {
@@ -114,12 +113,14 @@ export default function CaseCalculator({ locale }: CaseCalculatorProps) {
 
   useEffect(() => {
     calculateCompensation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (caseType && severity && duration) {
       calculateCompensation();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [caseType, severity, duration]);
 
   const calculateCompensation = () => {

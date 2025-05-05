@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import SafeImage from '@/components/ui/SafeImage';
 import { motion } from 'framer-motion';
 
 interface PracticeAreasDetailProps {

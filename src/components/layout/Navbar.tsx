@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import SafeImage from '@/components/ui/SafeImage';
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 interface NavbarProps {
