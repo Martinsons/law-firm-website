@@ -1,8 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  // Future enabled features
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
+    domains: ['images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
